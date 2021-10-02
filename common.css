@@ -3,16 +3,176 @@
 /* Fonts */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@font-face {
+  font-family: 'cheekFont';
+  src: url('fonts/subsetcheekfont.eot');
+  src: url('fonts/subsetcheekfont.eot') format('embedded-opentype'),
+    url('fonts/subsetcheekfont.woff') format('woff');  
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+@font-face{
+  font-family: blogicon;
+  src: url(https://cdn.blog.st-hatena.com/fonts/public/blogicon/blogicon-regular.woff?version=4e8bca71263f6a47b5e60dda3d3dc5a49e70b775) format("woff"),
+    url(https://cdn.blog.st-hatena.com/fonts/public/blogicon/blogicon-regular.otf?version=3864ece6545b7228eb5270b4fa5b0536d59032d0) format("opentype");
+  font-weight: normal;
+  font-style: normal
+}
+*/
+
 
 /* fontawesome */
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
 [class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
+  font-family: 'Font Awesome 5 Free', sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: #fcf5ed;
+}
+
+.ctt_wrapper {
+  margin: auto;
+  padding: 0 30px;
+}
+
+.main-visual {
+  height: 120vh;
+  background: #f9cdd4;
+  padding: 30px 0;
+}
+
+
+.rps-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .rps-btn::before {
+    content: "\f0c9";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 30px;
+    color: #c6232e;
+  }
+  .rps-btn {
+    display: block;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 10;
+    margin-right: 10px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.v_left {
+  float: left;
+  max-width: 50%;
+}
+
+.v_right {
+  float: right;
+  max-width: 50%;
+}
+
+.v_right::after {
+  clear: both;
+}
+
+.site_ttl, .site_desc {
+  font-family: 'cheekFont';
+  color: #c6232e;
+  line-height: 4rem;
+  position: relative;
+  z-index: 99;
+}
+
+.site_ttl {
+  font-size: 2.75em;
+  font-weight: 900;
+  padding-right: 30px;
+  line-height: 2.5rem;
+  text-align: center;
+  width: fit-content;
+}
+
+.site_desc {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-right: 30px;
+}
+
+
+.social-menu ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-menu ul li a {
+  text-decoration: none;
+  font-size: 0;
+}
+
+.social-menu ul li a::before {
+  font-family: 'Font Awesome 5 Brands';
+  font-size: 30px;
+  font-weight: 400;
+  color: #c6232e;
+}
+
+.social-menu ul li a[href*="twitter"]::before {
+  content: "\f099";
+}
+
+.social-menu ul li a[href*="github"]::before {
+  content: "\f09b";
+}
+
+.social-menu ul li a[href*="codepen"]::before {
+  content: "\f1cb";
+}
+
+.social-menu ul li a[href*="hatena"]::before {
+  content: url(images/hatenablog-logo.svg);
+  vertical-align: bottom;
+}
+
+
+
+
+.scallop-box {
+  margin-left: 100px;
+  padding: 20px;
+  width: 680px;
+  height: 680px;
+  background-color: transparent;
+  border-image:
+    url(images/scallop-frame.svg)
+    35% fill / 125px round;
+  box-sizing: content-box;
+}
+
+.scallop-box .img_wrapper {
+  width: 450px;
+  height: 450px;
+  margin-left: 300px;
+  background-image: url(images/applique-cushion.jpg);
+  background-size: cover;
+  border: 1px solid #c6232e;
 }
