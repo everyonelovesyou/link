@@ -5,8 +5,8 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 @font-face {
   font-family: 'cheekFont';
-  src: url('fonts/subsetcheekfont.eot');
-  src: url('fonts/subsetcheekfont.eot') format('embedded-opentype'),
+  src: url('images/subsetcheekfont.eot');
+  src: url('images/subsetcheekfont.eot') format('embedded-opentype'),
     url('fonts/subsetcheekfont.woff') format('woff');  
   font-weight: normal;
   font-style: normal;
