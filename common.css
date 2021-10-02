@@ -7,7 +7,7 @@
   font-family: 'cheekFont';
   src: url('images/subsetcheekfont.eot');
   src: url('images/subsetcheekfont.eot') format('embedded-opentype'),
-    url('fonts/subsetcheekfont.woff') format('woff');  
+    url('images/subsetcheekfont.woff') format('woff');  
   font-weight: normal;
   font-style: normal;
 }
@@ -174,5 +174,5 @@ body {
   margin-left: 300px;
   background-image: url(images/applique-cushion.jpg);
   background-size: cover;
-  border: 1px solid #c6232e;
+  border: 2px solid #c6232e;
 }
