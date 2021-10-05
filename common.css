@@ -5,9 +5,9 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 @font-face {
   font-family: 'cheekFont';
-  src: url('images/subsetcheekfont.eot');
-  src: url('images/subsetcheekfont.eot') format('embedded-opentype'),
-    url('images/subsetcheekfont.woff') format('woff');  
+  src: url('fonts/subsetcheekfont.eot');
+  src: url('fonts/subsetcheekfont.eot') format('embedded-opentype'),
+    url('fonts/subsetcheekfont.woff') format('woff');  
   font-weight: normal;
   font-style: normal;
 }
@@ -46,6 +46,8 @@ body {
 .ctt_wrapper {
   margin: auto;
   padding: 0 30px;
+  max-width: 1200px;
+
 }
 
 .main-visual {
@@ -98,7 +100,7 @@ body {
   color: #c6232e;
   line-height: 4rem;
   position: relative;
-  z-index: 99;
+  z-index: 30;
 }
 
 .site_ttl {
@@ -122,6 +124,8 @@ body {
   justify-content: end;
   align-items: center;
   gap: 10px;
+  position: relative;
+  z-index: 20;
 }
 
 .social-menu ul li a {
@@ -154,8 +158,6 @@ body {
 }
 
 
-
-
 .scallop-box {
   margin-left: 100px;
   padding: 20px;
@@ -166,13 +168,18 @@ body {
     url(images/scallop-frame.svg)
     35% fill / 125px round;
   box-sizing: content-box;
+  /*--------------*/
+  position: relative;
+  top: -100px;
+  z-index: 0;
 }
 
 .scallop-box .img_wrapper {
   width: 450px;
   height: 450px;
+  margin-top: 100px;
   margin-left: 300px;
   background-image: url(images/applique-cushion.jpg);
   background-size: cover;
-  border: 2px solid #c6232e;
+  border: 1px solid #c6232e;
 }
