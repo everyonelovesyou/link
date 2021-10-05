@@ -1,9 +1,28 @@
 $(document).ready(function(){
-  $('.autoplay').slick({
+  $('.slick_ctt').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
+    speed: 1000,
     infinite: true,
-    dots: true
+    dots: true,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          speed: 1000,
+          infinite: true,
+          dots: true,
+          variableWidth: true
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
   });
 });
