@@ -151,6 +151,7 @@ body {
   font-size: 36px;
   font-weight: 400;
   color: #c6232e;
+  vertical-align: text-bottom;
 }
 
 .social-menu ul li a[href*="twitter"]::before {
@@ -166,13 +167,27 @@ body {
 }
 
 .social-menu ul li a[href*="hatena"]::before {
-  content: url(images/hatenablog-logo.svg);
-  vertical-align: bottom;
+  content: '';
+  display: inline-block;
+  background-image: url(images/hatenablog-logo.svg);
+  background-size: contain;
+  width: 36px;
+  height: 36px;
 }
 
 @media (max-width: 400px) {
   .v_right {
-
+    padding: 0;
+  }
+  .social-menu ul li {
+    margin-left: 10px;
+  }
+  .social-menu ul li a::before {
+    font-size: 24px;
+  }
+  .social-menu ul li a[href*="hatena"]::before {
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -196,6 +211,7 @@ body {
 
 .site_ttl {
   font-size: 2.75em;
+  font-weight: bolder;
   font-weight: 900;
   padding-right: 30px;
   line-height: 2.5rem;
@@ -215,7 +231,7 @@ body {
     min-width: unset;
   }
   .site_ttl {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     line-height: 0.95em;
   }
   .site_desc {
