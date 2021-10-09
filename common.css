@@ -320,7 +320,7 @@ background-image: url(images/applique-cushion.jpg);
   opacity: 1;
   font-family: 'Font Awesome 5 Free';
   font-weight: normal;
-  font-size: 18px;
+  font-size: 14px;
   width: 20px;
   height: 20px;
   content: '\f111';
@@ -342,6 +342,10 @@ background-image: url(images/applique-cushion.jpg);
   }
   .slick-next {
     left: unset;
+  }
+  .img_wrapper {
+    width: 80vw;
+    height: 80vw;
   }
 }
 
