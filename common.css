@@ -102,8 +102,9 @@ body {
 
 @media (max-width: 1024px) {
   .scallop-box {
-    width: 652px;
-    height: 652px;
+    margin-left: 70px;
+    width: 575px;
+    height: 575px;
   }
 }
 
