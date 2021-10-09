@@ -118,7 +118,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 18px;
+  /* gap: 18px; */
   position: relative;
   z-index: 10;
 }
