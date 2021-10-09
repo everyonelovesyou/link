@@ -98,7 +98,14 @@ body {
 }
 
 
-
+@media (max-width: 1024px) {
+  .scallop-box {
+    max-width: 680px;
+    max-height: 680px;
+    width: auto;
+    height: auto;
+  }
+}
 
 .v_right {
   width: 100%;
