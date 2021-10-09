@@ -46,7 +46,6 @@ body {
 .ctt_wrapper {
   margin: auto;
   padding: 0 0 0 50px;
-
 }
 
 .main-visual {
@@ -55,6 +54,11 @@ body {
   padding: 20px 0;
 }
 
+@media (max-width: 400px) {
+  .ctt_wrapper {
+    padding: 0 20px;
+  }
+}
 
 .rps-btn {
   display: none;
@@ -108,6 +112,15 @@ body {
   }
 }
 
+@media (max-width: 400px) {
+  .scallop-box {
+    left: -60vw;
+    width: 90vw;
+    height:  90vh;
+  }
+
+}
+
 .v_right {
   width: 100%;
   padding-right: 50px;
@@ -157,7 +170,11 @@ body {
   vertical-align: bottom;
 }
 
+@media (max-width: 400px) {
+  .v_right {
 
+  }
+}
 
 
 
@@ -173,7 +190,6 @@ body {
 .site_ttl, .site_desc {
   font-family: 'cheekFont';
   color: #c6232e;
-  line-height: 4rem;
   position: relative;
   z-index: 20;
 }
@@ -191,7 +207,24 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   padding-right: 30px;
+  margin-top: 20px;
 }
+
+@media (max-width: 400px) {
+  .site_info {
+    min-width: unset;
+  }
+  .site_ttl {
+    font-size: 1.5rem;
+    line-height: 0.95em;
+  }
+  .site_desc {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}
+
+
 
 
 .slick_ctt {
