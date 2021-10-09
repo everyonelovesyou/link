@@ -158,6 +158,10 @@ body {
   content: "\f099";
 }
 
+.social-menu ul li a[href*="instagram"]::before {
+  content: "\f16d";
+}
+
 .social-menu ul li a[href*="github"]::before {
   content: "\f09b";
 }
@@ -180,14 +184,14 @@ body {
     padding: 0;
   }
   .social-menu ul li {
-    margin-left: 10px;
+    margin-left: 14px;
   }
   .social-menu ul li a::before {
-    font-size: 24px;
+    font-size: 28px;
   }
   .social-menu ul li a[href*="hatena"]::before {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
   }
 }
 
