@@ -330,3 +330,10 @@ background-image: url(images/applique-cushion.jpg);
   color: #c6232e;
   font-weight: 900;
 }
+
+@media (max-width: 400px) {
+  .slick_ctt {
+    right: 0;
+  }
+}
+
