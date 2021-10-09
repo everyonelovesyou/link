@@ -333,7 +333,8 @@ background-image: url(images/applique-cushion.jpg);
 
 @media (max-width: 400px) {
   .slick_ctt {
-    right: 0;
+    left: 50px;
+    width: 85vw;
   }
 }
 
