@@ -231,6 +231,9 @@ body {
 }
 
 @media (max-width: 400px) {
+  .v_left {
+    flex-direction: column;
+  }
   .site_info {
     min-width: unset;
   }
@@ -320,7 +323,7 @@ background-image: url(images/applique-cushion.jpg);
   opacity: 1;
   font-family: 'Font Awesome 5 Free';
   font-weight: normal;
-  font-size: 14px;
+  font-size: 10px;
   width: 20px;
   height: 20px;
   content: '\f111';
@@ -341,11 +344,15 @@ background-image: url(images/applique-cushion.jpg);
     width: 85vw;
   }
   .slick-next {
-    left: unset;
+    left: 80vw;
   }
   .img_wrapper {
     width: 80vw;
     height: 80vw;
+  }
+  .slick-dots {
+  width: 100px;
+  left: calc( 40vw - 50px); /* (80vw-100px)/2 */
   }
 }
 
