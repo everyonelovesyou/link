@@ -45,7 +45,8 @@ body {
 
 .ctt_wrapper {
   margin: auto;
-  padding: 0 0 0 50px;
+  padding: 0 50px;
+  position: relative;
 }
 
 .main-visual {
@@ -86,29 +87,35 @@ body {
 }
 
 .scallop-box {
-  margin-left: 100px;
   padding: 20px;
-  max-width: 100vh;
-  max-height: 100vh;
-  width: 680px;
-  height: 680px;
+  width: 691px;
+  height: 691px;
   background-color: transparent;
   border-image:
     url(images/scallop-frame.svg)
-    35% fill / 125px round;
-  box-sizing: content-box;
+    35% fill / 70px round;
   /*--------------*/
   position: absolute;
-  top: -30px;
+  top: -40px;
+  left: 150px;
   z-index: 0;
 }
 
+/*  (35 + 25n + 35) x 2 */
+/* 140 + 50n */
 
 @media (max-width: 959px) { /* 960px */
   .scallop-box {
-    margin-left: 70px;
-    width: 575px;
-    height: 575px;
+    width: 641px;
+    left: calc( 50vw - 320px);
+  }
+}
+
+@media (max-width: 767px) { /* 768px */
+  .scallop-box {
+    width: 540px;
+    height: 540px;
+    left: calc( 50vw - 270px);
   }
 }
 
@@ -123,7 +130,6 @@ body {
 
 .v_right {
   width: 100%;
-  padding-right: 50px;
   margin-left: auto;
 }
 
@@ -203,7 +209,7 @@ body {
 }
 
 .site_info {
-  min-width: 400px;
+  min-width: 365px;
 }
 
 .site_ttl, .site_desc {
@@ -230,21 +236,25 @@ body {
   margin-top: 20px;
 }
 
-@media (max-width: 519px) { /* 520px */
+@media (max-width: 767px) { /* 768px */
   .v_left {
     flex-direction: column;
   }
   .site_info {
     min-width: unset;
-
   }
+  .site_desc {
+    margin: 10px auto 30px;
+  }
+}
+
+@media (max-width: 519px) { /* 520px */
   .site_ttl {
     font-size: 1.75rem;
     line-height: 0.95em;
   }
   .site_desc {
     font-size: 1rem;
-    margin: 10px auto 30px;
   }
 }
 
@@ -253,13 +263,11 @@ body {
 
 .slick_ctt {
   position: relative;
-  right: -50px;
   z-index: 30;
-  max-width: calc( 100vw - 520px);
 }
 
 .slick-list {
-  width: calc( 100vw - 520px);
+  width: calc( 100vw - 415px);
 }
 
 .slick-prev, .slick-next {
@@ -336,6 +344,17 @@ background-image: url(images/applique-cushion.jpg);
   font-weight: 900;
 }
 
+@media (max-width: 959px) and (min-width: 520px) {
+  .img_wrapper {
+    width: 400px;
+    height: 400px;
+  }
+  .slick-next, .slick-next:before {
+    display: none;
+    border: none;
+  }
+}
+
 @media (max-width: 519px) { /* 520px */
   .slick_ctt {
     right: 0;
@@ -344,10 +363,9 @@ background-image: url(images/applique-cushion.jpg);
   .slick-list {
     width: 80vw;
   }
-
-.slick-prev, .slick-prev:before {
-  display: none;
-  border: none;
+  .slick-prev, .slick-prev:before {
+    display: none;
+    border: none;
 }
   .slick-next {
     left: calc( 80vw - 20px);
