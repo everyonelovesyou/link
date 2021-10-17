@@ -10,7 +10,7 @@ $(document).ready(function(){
     variableWidth: true,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 960,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
