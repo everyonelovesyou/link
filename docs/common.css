@@ -93,7 +93,7 @@ body {
   background-color: transparent;
   border-image:
     url(images/scallop-frame.svg)
-    35% fill / 25px round;
+    35% fill / 50px round;
   /*--------------*/
   position: absolute;
   top: -40px;
