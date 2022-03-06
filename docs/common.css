@@ -43,28 +43,17 @@ body {
   background: #f9cdd4; /* ベージュ #fcf5ed */
 }
 
-.ctt_wrapper {
-  margin: auto;
-}
-
 @media (max-width: 959px) { /* 960px */
   .rps-btn::before {
     content: "\f0c9";
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
-    font-size: 30px;
+    font-size: 28px;
     color: #c6232e;
   }
   .rps-btn {
-    display: block;
-    position: fixed;
-    left: 20px;
-    top: 20px;
     z-index: 10;
-    margin-right: 10px;
     background-color: transparent;
-    cursor: pointer;
-    border: none
   }
 }
 
@@ -148,7 +137,7 @@ body {
   height: 28px;
 }
 
-.site_ttl, .site_desc {
+.site_ttl h1, .site_ttl p {
   font-family: 'cheekFont';
   color: #c6232e;
   position: relative;
