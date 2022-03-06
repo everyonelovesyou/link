@@ -59,30 +59,27 @@ body {
 
 .scallop-box {
   padding: 20px;
-  width: 691px;
-  height: 691px;
   background-color: transparent;
   border-image:
     url(images/scallop-frame.svg)
     35% fill / 50px round;
   /*--------------*/
+  transform: translate(-50%, 0);
   position: absolute;
-  top: -40px;
-  left: 150px;
   z-index: 0;
 }
 
 /*  (35 + 25n + 35) x 2 */
-/* 140 + 50n */
+/* 140 + 50n
 
-@media (max-width: 959px) { /* 960px */
+@media (max-width: 959px) { /* 960px
   .scallop-box {
     width: 641px;
     left: calc( 50vw - 320px);
   }
 }
 
-@media (max-width: 767px) { /* 768px */
+@media (max-width: 767px) { /* 768px
   .scallop-box {
     width: 540px;
     height: 540px;
@@ -90,7 +87,7 @@ body {
   }
 }
 
-@media (max-width: 519px) { /* 520px */
+@media (max-width: 519px) { /* 520px
   .scallop-box {
     left: -60vw;
     width: 90vw;
@@ -98,6 +95,7 @@ body {
   }
 
 }
+*/
 
 .social-menu li a {
   text-decoration: none;
@@ -137,11 +135,15 @@ body {
   height: 28px;
 }
 
+.site_ttl {
+  width: fit-content;
+}
+
 .site_ttl h1, .site_ttl p {
   font-family: 'cheekFont';
   color: #c6232e;
-  position: relative;
   z-index: 20;
+  margin-bottom: 0;
 }
 
 
