@@ -152,9 +152,11 @@ body {
   z-index: 30;
 }
 
+/*
 .slick-list {
-  width: calc( 100vw - 415px);
+  width: ;
 }
+*/
 
 .slick-prev, .slick-next {
   width: 70px;
