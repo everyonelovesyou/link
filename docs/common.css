@@ -41,6 +41,7 @@ ul {
 
 body {
   background: #f9cdd4; /* ベージュ #fcf5ed */
+  overflow: hidden;
 }
 
 @media (max-width: 959px) { /* 960px */
@@ -64,7 +65,7 @@ body {
     url(images/scallop-frame.svg)
     35% fill / 50px round;
   /*--------------*/
-  transform: translate(-50%, 0);
+  transform: translate(-25%, 0);
   position: absolute;
   z-index: 0;
 }
@@ -146,74 +147,63 @@ body {
   margin-bottom: 0;
 }
 
+.slick_ctt,
+.img_wrapper {
+    width: 75vw;
+}
+.slick-list {
+  width: calc(100vw - 25vw /2);
+}
 
 .slick_ctt {
   position: relative;
   z-index: 30;
 }
 
-/*
-.slick-list {
-  width: ;
+.slick-prev, .slick-prev:before {
+  display: none;
+  border: none;
 }
-*/
 
-.slick-prev, .slick-next {
-  width: 70px;
-  height: 70px;
+.slick-next,
+.slick-next:hover,
+.slick-next:focus {
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
-  border: 2px solid #c6232e;
-  z-index: 40;
+  background: rgba(255, 255, 255, 0.5);
 }
 
-.slick-next {
-  left: 435px;
-}
-
-.slick-prev:before, .slick-next:before {
+.slick-next:before,
+.slick-next:hover::before,
+.slick-next:focus::before {
   color: #c6232e;
   opacity: 1;
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  font-size: 30px;
+  font-size: 1.5rem;
   line-height: 1;
-}
-
-.slick-prev:before {
-  content: '\f053';
-}
-
-.slick-next:before {
   content: '\f054';
 }
 
 .img_wrapper {
   background-size: cover;
   border: 2px solid #c6232e;
-  width: 480px;
-  height: 480px;
-}
-
-.img_wrapper {
+  height: 75vw;
   margin-right: 100px;
+  /*スライドの画像間の距離*/
 }
 
 .img01 {
 background-image: url(images/applique-cushion.jpg);
 }
-
 .img02 {
   background-image: url(images/embroidery-flower.jpg);
 }
-
 .img03 {
   background-image: url(images/moleyarn-knit.jpg);
 }
 
-.slick-dots {
-  width: 100px;
-  left: 190px; /* (480px-100px)/2 */
-}
 
 .slick-dots li button:before {
   color: #c6232e;
@@ -231,42 +221,4 @@ background-image: url(images/applique-cushion.jpg);
   color: #c6232e;
   font-weight: 900;
 }
-
-@media (max-width: 959px) and (min-width: 520px) {
-  .img_wrapper {
-    width: 400px;
-    height: 400px;
-  }
-  .slick-next, .slick-next:before {
-    display: none;
-    border: none;
-  }
-}
-
-@media (max-width: 519px) { /* 520px */
-  .slick_ctt {
-    right: 0;
-    width: 80vw;
-  }
-  .slick-list {
-    width: 80vw;
-  }
-  .slick-prev, .slick-prev:before {
-    display: none;
-    border: none;
-}
-  .slick-next {
-    left: calc( 80vw - 20px);
-  }
-  .img_wrapper {
-    width: 80vw;
-    height: 80vw;
-  }
-  .slick-dots {
-  width: 100px;
-  left: calc( 40vw - 50px); /* (80vw-100px)/2 */
-  }
-}
-
-
 
