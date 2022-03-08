@@ -3,6 +3,7 @@
 /* Fonts */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
 @import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/css2?family=Alata&display=swap);
 @font-face {
   font-family: 'cheekFont';
   src: url('fonts/subsetcheekfont.eot');
@@ -40,23 +41,82 @@ ul {
 }
 
 body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #413543;
   background: #f9cdd4; /* ベージュ #fcf5ed */
-  overflow: hidden;
 }
 
+.c6232e {
+  color: #c6232e;
+}
+.cheek {
+  font-family: 'cheekFont';
+  font-weight: 900;
+}
+.en {
+  letter-spacing: 2px;
+}
+
+
 @media (max-width: 959px) { /* 960px */
-  .rps-btn::before {
+  .btn-gnav::before {
     content: "\f0c9";
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     font-size: 28px;
     color: #c6232e;
   }
-  .rps-btn {
+  .btn-gnav {
     z-index: 10;
     background-color: transparent;
   }
 }
+
+nav {
+  position: fixed;
+  top: 0;
+  right: calc(50px - 100vw);
+  width: calc(100vw - 50px);
+  height: 100%;
+  padding-top: 50px;
+  background: rgba(255, 255, 255, 0.95);
+  font-size: 16px;
+  box-sizing: border-box;
+  z-index: 102;
+}
+
+.btn-gnav.open+nav {
+box-shadow: -300px 0 0 100vw rgba(0, 0, 0, 0.33);
+}
+
+nav ul li {
+  display: block;
+  padding: .25em;
+  border-bottom: 1px solid #ededed;
+}
+
+nav ul li:first-child {
+border-top: 1px solid #ededed;
+}
+nav ul li a {
+text-decoration: none;
+display: block;
+}
+
+#gnav a {
+line-height: 3em;
+padding-left: calc(2em + 5px);
+}
+#gnav a:hover {
+border-bottom: none;
+}
+
+nav ul li:hover {
+background: #ededed;
+}
+
 
 .scallop-box {
   padding: 20px;
@@ -222,3 +282,36 @@ background-image: url(images/applique-cushion.jpg);
   font-weight: 900;
 }
 
+section.bg-white {
+  background-color: #fff;
+  left: 0;
+}
+
+section.bg-white .section-ttl {
+  color: #c6232e;
+  font-family: 'cheekFont';
+  font-family: 'Alata', sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.bg-white .section-ttl::before,
+section.bg-white .section-ttl::after {
+  content: '';
+  background-image: url(images/favorite.svg);
+  background-repeat: space no-repeat;
+  background-position-x: center;
+  background-size: 1rem;
+  width: 100%;
+  height: 1rem;
+}
+section.bg-white .section-ttl::before {
+  margin-right: .75rem;
+}
+section.bg-white .section-ttl::after {
+  margin-left: .75rem;
+}

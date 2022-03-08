@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <link rel="stylesheet" href="common.css" />
@@ -36,7 +37,8 @@
 <div class="container px-3 my-2">
 
   <div class="row justify-content-between align-items-start mb-2">
-    <button class="rps-btn col-auto border-0"></button>
+    <button class="btn-gnav col-auto border-0"></button>
+
 
     <ul class="col d-flex gap-3 justify-content-end align-items-center mb-0 social-menu">
       <li>
@@ -58,9 +60,19 @@
 
   </div> <!-- /.row -->
 
-  <main class="position-relative vh-100">
+  <nav id="gnav">
+    <ul class="menu">
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+    </ul>
+  </nav>
 
-    <div class="scallop-box w-100 h-75 top-0 start-0"></div>
+  <main class="position-relative h-auto pb-5 mb-5">
+
+    <div class="scallop-box w-100 h-100 top-0 start-0"></div>
 
     <div class="site_ttl d-flex flex-column me-auto pt-4 mb-4">
       <h1 class="text-center fw-bold mx-auto">世界一可愛いもの<br>しか作らん人</h1>
@@ -75,6 +87,29 @@
 
   </main>
 
+  <section class="bg-white p-3 position-absolute">
+    <h2 class="section-ttl">Profile</h2>
+
+      <div class="row">
+        <div class="col">
+          <h3 class="">かえで</h3>
+          <p class="small">肩書がない…</p>
+        </div>
+        <div class="col">
+          <!-- 写真 -->
+        </div>
+      </div>
+
+      <p class="">
+        2000年、大阪生まれ。
+        可愛い たのしい♪ が好きな、すなおでやさしい女の子です。
+      </p>
+      <p>
+        本業は家事手伝いで、週3日ほどSIerのバイトを最低賃金の時給でやっています。トホホ。<br>
+        趣味は可愛いものを作ること！可愛いものを作るために生きとる！！
+      </p>
+    </div>
+  </section>
 
 </div> <!-- /.container -->
 
@@ -84,7 +119,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
+<script type="text/javascript" src="hamburger.js"></script>
 <script type="text/javascript" src="myslick.js"></script>
 
 </body>
