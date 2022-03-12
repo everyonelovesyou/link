@@ -58,6 +58,10 @@ body {
 .en {
   letter-spacing: 2px;
 }
+.border-red {
+  border-color: #c6232e;
+  border-width: 2px;
+}
 
 .btn-gnav::before {
   content: "\f0c9";
@@ -89,8 +93,9 @@ body {
 }
 
 #gnav::before {
+  visibility: hidden;
   content: '';
-  width: 100vw;
+  width: 150vw;
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
   z-index: 90;
@@ -114,6 +119,7 @@ body {
 }
 
 .btn-gnav.open ~ #gnav::before {
+  visibility: inherit;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -310,7 +316,6 @@ background-image: url(images/applique-cushion.jpg);
 }
 
 section.bg-white {
-  background-color: #fff;
   margin: 0 calc(50% - 50vw);
 }
 
@@ -340,4 +345,23 @@ section.bg-white .section-ttl::before {
 }
 section.bg-white .section-ttl::after {
   margin-left: .75rem;
+}
+
+section.bg-white.scallop{
+  position: relative;
+  margin-top: 30px;
+}
+
+section.bg-white.scallop::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  right: -1.25rem;
+  left:  -1.25rem;
+  border-top: 30px solid;
+  border-image-source: url(images/scallop.svg);
+  border-image-slice: 0 5 100%;
+  border-image-width: 1rem;
+  border-image-outset: 0;
+  border-image-repeat: round;
 }
