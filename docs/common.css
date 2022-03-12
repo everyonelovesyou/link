@@ -213,7 +213,8 @@ background: #ededed;
     width: 75vw;
 }
 .slick-list {
-  width: calc(100vw - 25vw /2);
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
 }
 
 .slick_ctt {
@@ -251,7 +252,7 @@ background: #ededed;
   background-size: cover;
   border: 2px solid #c6232e;
   height: 75vw;
-  margin-right: 100px;
+  margin: 0 calc(25vw /2);
   /*スライドの画像間の距離*/
 }
 
