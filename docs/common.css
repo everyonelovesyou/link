@@ -79,7 +79,7 @@ body {
   position: fixed;
   top: 0;
   right: -75vw;
-  width: 75vw;
+  width: 75vw!important;
   height: 100%;
   padding-top: 50px;
   background: rgba(255, 255, 255, 1);
