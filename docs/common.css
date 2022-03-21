@@ -48,6 +48,11 @@ body {
   background: #f9cdd4; /* ベージュ #fcf5ed */
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .c6232e {
   color: #c6232e;
 }
@@ -347,7 +352,7 @@ section.bg-white .section-ttl::after {
   margin-left: .75rem;
 }
 
-section.bg-white.scallop{
+section.bg-white.scallop {
   margin-top: 30px;
   padding: .25rem 1rem 1rem;
   border-top: 1px solid;
@@ -356,4 +361,14 @@ section.bg-white.scallop{
   border-image-width: .75rem;
   border-image-outset: .75rem;
   border-image-repeat: repeat;
+}
+
+.card-body .desc {
+  font-weight: 900;
+}
+.card-body .desc span.tag {
+  background-color: #fcf5ed;
+  border-radius: .25rem;
+  padding: .25rem .5rem;
+  margin-right: .25rem;
 }
