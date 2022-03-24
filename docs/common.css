@@ -156,44 +156,17 @@ background: #ededed;
 
 
 .scallop-box {
-  padding: 20px;
-  background-color: transparent;
-  border-image:
-    url(images/scallop-frame.svg)
-    35% fill / 50px round;
+  background-color: #fff;
+  border-image-source: url(images/scallop-frame.svg);
+  border-image-slice: 35% fill;
+  border-image-width: 34px;
+  border-image-outset: 7px;
+  border-image-repeat: space;
   /*--------------*/
   transform: translate(-25%, 0);
   position: absolute;
   z-index: 0;
 }
-
-/*  (35 + 25n + 35) x 2 */
-/* 140 + 50n
-
-@media (max-width: 959px) { /* 960px
-  .scallop-box {
-    width: 641px;
-    left: calc( 50vw - 320px);
-  }
-}
-
-@media (max-width: 767px) { /* 768px
-  .scallop-box {
-    width: 540px;
-    height: 540px;
-    left: calc( 50vw - 270px);
-  }
-}
-
-@media (max-width: 519px) { /* 520px
-  .scallop-box {
-    left: -60vw;
-    width: 90vw;
-    height:  90vh;
-  }
-
-}
-*/
 
 .social-menu li a {
   text-decoration: none;
