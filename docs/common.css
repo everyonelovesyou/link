@@ -217,18 +217,24 @@ background: #ededed;
   margin-bottom: 0;
 }
 
-.slick_ctt,
-.img_wrapper {
-    width: 75vw;
-}
-.slick-list {
-  width: 100vw;
-  margin: 0 calc(50% - 50vw);
+.slick_ctt {
+  z-index: 30;
+  width: 75vw;
+  margin: 0 auto;
+  margin-right: auto;
 }
 
-.slick_ctt {
-  position: relative;
-  z-index: 30;
+.img_wrapper {
+  width: 75vw;
+  height: 75vw;
+  margin: 0 calc(25vw /2);
+  /*スライドの画像間の距離*/
+}
+
+.slick-list {
+  overflow: inherit;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
 }
 
 .slick-prev, .slick-prev:before {
@@ -260,9 +266,6 @@ background: #ededed;
 .img_wrapper {
   background-size: cover;
   border: 2px solid #c6232e;
-  height: 75vw;
-  margin: 0 calc(25vw /2);
-  /*スライドの画像間の距離*/
 }
 
 .img01 {
@@ -291,6 +294,22 @@ background-image: url(images/applique-cushion.jpg);
   opacity: 1;
   color: #c6232e;
   font-weight: 900;
+}
+
+@media only screen and (min-width: 576px) {
+  .slick_ctt {
+    width: 40vw;
+    margin: 0 0 0 10vw;
+  }
+  .img_wrapper {
+    width: 40vw;
+    height: 40vw;
+    margin: 0 10vw 0 0;
+    /*スライドの画像間の距離*/
+  }
+  .slick-list {
+    margin: 0;
+  }
 }
 
 section.bg-white {
