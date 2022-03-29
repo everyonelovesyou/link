@@ -157,12 +157,12 @@ background: #ededed;
 
 .scallop-box {
   background-color: #fff;
-  border: 1px solid #c6232e;
+  border: 10px solid;
   border-image-source: url(images/scallop-frame.svg);
   border-image-slice: 35% fill;
   border-image-width: auto;
-  border-image-outset: 8px;
-  border-image-repeat: space;
+  border-image-outset: 20px;
+  border-image-repeat: round;
   /*--------------*/
   transform: translate(-25%, 0);
   position: absolute;
