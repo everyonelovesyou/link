@@ -157,10 +157,11 @@ background: #ededed;
 
 .scallop-box {
   background-color: #fff;
+  border: 1px solid #c6232e;
   border-image-source: url(images/scallop-frame.svg);
   border-image-slice: 35% fill;
-  border-image-width: 34px;
-  border-image-outset: 7px;
+  border-image-width: auto;
+  border-image-outset: 8px;
   border-image-repeat: space;
   /*--------------*/
   transform: translate(-25%, 0);
