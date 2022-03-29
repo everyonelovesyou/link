@@ -159,7 +159,7 @@ background: #ededed;
   background-color: #fff;
   border-image-source: url(images/scallop-frame.svg);
   border-image-slice: 35% fill;
-  border-image-width: 34%;
+  border-image-width: 34px;
   border-image-outset: 7px;
   border-image-repeat: space;
   /*--------------*/
