@@ -337,7 +337,7 @@ section.bg-white .section-ttl::after {
   background-image: url(images/favorite.svg);
   background-repeat: space no-repeat;
   background-position-x: center;
-  background-size: 1rem;
+  background-size: 1.5rem 1rem;
   width: 100%;
   height: 1rem;
 }
@@ -350,13 +350,13 @@ section.bg-white .section-ttl::after {
 
 section.bg-white.scallop {
   margin-top: 30px;
-  padding: .25rem 1rem 1rem;
-  border-top: 1px solid;
-  border-image-source: url(images/scallop.svg);
-  border-image-slice: 100% 0 0;
-  border-image-width: .75rem;
-  border-image-outset: .75rem;
-  border-image-repeat: repeat;
+  padding: 0 1rem 1rem;
+  border-top: 20px solid;
+  border-image-source: url(images/scallop-frame.svg);
+  border-image-slice: 35% fill;
+  border-image-width: auto;
+  border-image-outset: 10px 10px 0;
+  border-image-repeat: round;
 }
 
 .card-body {
