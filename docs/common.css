@@ -44,6 +44,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  letter-spacing: 1px;
   color: #541018;
   background: #f9cdd4; /* ベージュ #fcf5ed */
 }
