@@ -317,15 +317,19 @@ background-image: url(images/applique-cushion.jpg);
   }
 }
 
+section .section-ttl {
+  text-align: center;
+  font-family: 'Alata', sans-serif;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
 section.bg-white {
   margin: 0 calc(50% - 50vw);
 }
 
 .section-ttl.heart-line {
   color: #c6232e;
-  font-family: 'Alata', sans-serif;
-  font-weight: 900;
-  letter-spacing: 5px;
   position: relative;
   display: flex;
   align-items: center;
@@ -358,6 +362,48 @@ section.bg-white.scallop {
   border-image-outset: 10px 10px 0;
   border-image-repeat: round;
 }
+
+section.y2k-heart {
+  position: relative;
+  margin-top: 10vw; /* (70-50vw)/2 */
+}
+
+section.y2k-heart::before,
+section.y2k-heart::after {
+  content: '';
+  z-index: -10;
+  position: absolute;
+  mask: url(images/favorite.svg) no-repeat center / 120% auto;
+  -webkit-mask: url(images/favorite.svg) no-repeat center / 120% auto;
+}
+section.y2k-heart::before {
+  width: 50vw;
+  height: 50vw;
+  max-width: 500px;
+  max-height: 500px;
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 0;
+  left: calc((100% - 50vw)/2);
+}
+section.y2k-heart::after {
+  width: 70vw;
+  height: 70vw;
+  max-width: 700px;
+  max-height: 700px;
+  background-color: rgba(255, 255, 255, 0.4);
+  top: -10vw; /* (70-50vw)/2 */
+  left: calc((100% - 70vw)/2);
+}
+@media only screen and (min-width: 1000px) {
+  section.y2k-heart::before {
+    left: calc((100% - 500px)/2);
+  }
+  section.y2k-heart::after {
+    top: -100px; /* (700-500px)/2 */
+    left: calc((100% - 700px)/2);
+  }
+}
+
 
 .card-body {
   line-height: 1.2em;
