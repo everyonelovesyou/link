@@ -328,8 +328,12 @@ p.wrap-stc > span {
   display: inline-block;
 }
 
+section {
+  padding: 1rem;
+}
 section.bg-white {
   margin: 0 calc(50% - 50vw);
+  padding: 1rem calc(50vw - 50%);
 }
 
 .section-ttl.heart-line {
@@ -338,6 +342,7 @@ section.bg-white {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 calc(50% - 50vw) 0.75rem;
 }
 .section-ttl.heart-line::before,
 .section-ttl.heart-line::after {
@@ -348,12 +353,7 @@ section.bg-white {
   background-size: 1.5rem 1rem;
   width: 100%;
   height: 1rem;
-}
-.section-ttl.heart-line::before {
-  margin-right: .75rem;
-}
-.section-ttl.heart-line::after {
-  margin-left: .75rem;
+  margin: 0 0.75rem;
 }
 
 section.bg-white.scallop {
@@ -407,7 +407,6 @@ section.y2k-heart::after {
     left: calc((100% - 700px)/2);
   }
 }
-
 
 .card-body {
   line-height: 1.2em;
