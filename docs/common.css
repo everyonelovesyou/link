@@ -47,6 +47,7 @@ body {
   letter-spacing: 1px;
   color: #541018;
   background: #f9cdd4; /* ベージュ #fcf5ed */
+  overflow-x: hidden;
 }
 
 img {
