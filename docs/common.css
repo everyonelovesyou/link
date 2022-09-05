@@ -324,6 +324,10 @@ section .section-ttl {
   letter-spacing: 5px;
 }
 
+p.wrap-stc > span {
+  display: inline-block;
+}
+
 section.bg-white {
   margin: 0 calc(50% - 50vw);
 }
