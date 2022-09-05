@@ -329,7 +329,7 @@ p.wrap-stc > span {
 }
 
 section {
-  padding: 1rem;
+  padding: 1rem 0;
 }
 section.bg-white {
   margin: 0 calc(50% - 50vw);
