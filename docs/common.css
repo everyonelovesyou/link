@@ -369,7 +369,7 @@ section.bg-white.scallop {
 
 section.y2k-heart {
   position: relative;
-  margin-top: 10vw; /* (70-50vw)/2 */
+  margin-top: min(15vw, 120px); /* (110-80vw)/2, (880-640)/2 */
 }
 
 section.y2k-heart::before,
@@ -380,32 +380,21 @@ section.y2k-heart::after {
   mask: url(images/favorite.svg) no-repeat center / 120% auto;
   -webkit-mask: url(images/favorite.svg) no-repeat center / 120% auto;
 }
-section.y2k-heart::before {
-  width: 50vw;
-  height: 50vw;
-  max-width: 500px;
-  max-height: 500px;
-  background-color: rgba(255, 255, 255, 0.8);
+
+/* 1vw = 8px のときをブレークポイントとする。(10vw = 800px) */
+section.y2k-heart::before { /* 8*80=640  */
+  width: min(80vw, 640px);
+  height: min(80vw, 640px);
+  background-color: #ffffffcc; /* 0.8 */
   top: 0;
-  left: calc((100% - 50vw)/2);
+  left: calc((100% - min(80vw, 640px))/2);
 }
-section.y2k-heart::after {
-  width: 70vw;
-  height: 70vw;
-  max-width: 700px;
-  max-height: 700px;
-  background-color: rgba(255, 255, 255, 0.4);
-  top: -10vw; /* (70-50vw)/2 */
-  left: calc((100% - 70vw)/2);
-}
-@media only screen and (min-width: 1000px) {
-  section.y2k-heart::before {
-    left: calc((100% - 500px)/2);
-  }
-  section.y2k-heart::after {
-    top: -100px; /* (700-500px)/2 */
-    left: calc((100% - 700px)/2);
-  }
+section.y2k-heart::after { /* 8*110=880 */
+  width: min(110vw, 880px);
+  height: min(110vw, 880px);
+  background-color: #ffffff66; /* 0.4 */
+  top: max(-15vw, -120px); /* (110-80vw)/2, (880-640)/2 */
+  left: calc((100% - min(110vw, 880px))/2);
 }
 
 .card-body {
