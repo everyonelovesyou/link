@@ -1,13 +1,4 @@
 @charset "utf-8";
-/* Fonts */
-@font-face {
-  font-family: 'cheekFont';
-  src: url('fonts/subsetcheekfont.eot');
-  src: url('fonts/subsetcheekfont.eot') format('embedded-opentype'),
-    url('fonts/subsetcheekfont.woff') format('woff');  
-  font-weight: normal;
-  font-style: normal;
-}
 
 /*
  * My Custom CSS Reset
@@ -61,33 +52,50 @@ body {
   color: #541018;
   background: #f9cdd4; /* ベージュ #fcf5ed */
 }
-.c6232e {
-  color: #c6232e;
+
+/* Fonts */
+@font-face {
+  font-family: 'cheekFont';
+  src: url('fonts/subsetcheekfont.eot');
+  src: url('fonts/subsetcheekfont.eot') format('embedded-opentype'),
+    url('fonts/subsetcheekfont.woff') format('woff');  
+  font-weight: normal;
+  font-style: normal;
 }
 .cheek {
   font-family: 'cheekFont';
   font-weight: 900;
 }
+
+.c6232e {
+  color: #c6232e;
+}
 .en {
   letter-spacing: 2px;
 }
 
+header.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
 
-
-.btn-gnav::before {
+button.btn-gnav::before {
   content: "\f0c9";
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   font-size: 1.5rem;
   color: #c6232e;
 }
-.btn-gnav {
+button.btn-gnav {
   width: 3rem;
   height: 3rem;
-  position: fixed;
-  z-index: 110;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  z-index: 110;
 }
 
 #gnav {
@@ -133,30 +141,26 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-nav ul li {
+#gnav ul.menu li {
   display: block;
   padding: .25em;
   border-bottom: 1px solid #ededed;
 }
-
-nav ul li:first-child {
+#gnav ul.menu li:first-child {
 border-top: 1px solid #ededed;
 }
-nav ul li a {
-text-decoration: none;
-display: block;
+#gnav ul.menu li:hover {
+background: #ededed;
 }
 
-#gnav a {
+#gnav ul.menu li a {
+text-decoration: none;
+display: block;
 line-height: 3em;
 padding-left: calc(2em + 5px);
 }
-#gnav a:hover {
+#gnav ul.menu li a:hover {
 border-bottom: none;
-}
-
-nav ul li:hover {
-background: #ededed;
 }
 
 
@@ -210,10 +214,16 @@ background: #ededed;
 }
 
 .site_ttl {
+  display: flex;
+  flex-direction: column;
   width: fit-content;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
 
-.site_ttl h1, .site_ttl p {
+.site_ttl h1,
+.site_ttl p {
   font-family: 'cheekFont';
   color: #c6232e;
   z-index: 20;
