@@ -56,9 +56,9 @@ body {
 /* Fonts */
 @font-face {
   font-family: 'cheekFont';
-  src: url('fonts/subsetcheekfont.eot');
-  src: url('fonts/subsetcheekfont.eot') format('embedded-opentype'),
-    url('fonts/subsetcheekfont.woff') format('woff');  
+  src: url('../fonts/subsetcheekfont.eot');
+  src: url('../fonts/subsetcheekfont.eot') format('embedded-opentype'),
+    url('../fonts/subsetcheekfont.woff') format('woff');  
   font-weight: normal;
   font-style: normal;
 }
@@ -168,7 +168,7 @@ border-bottom: none;
   margin: 20px;
   background-color: #fff;
   border: 10px solid;
-  border-image-source: url(images/scallop-frame.svg);
+  border-image-source: url(../images/scallop-frame.svg);
   border-image-slice: 35% fill;
   border-image-width: auto;
   border-image-outset: 20px;
@@ -207,7 +207,7 @@ border-bottom: none;
 .social-menu li a[href*="hatena"]::before {
   content: '';
   display: inline-block;
-  background-image: url(images/hatenablog-logo.svg);
+  background-image: url(../images/hatenablog-logo.svg);
   background-size: contain;
   width: 28px;
   height: 28px;
@@ -282,13 +282,13 @@ border-bottom: none;
 }
 
 .img01 {
-background-image: url(images/applique-cushion.jpg);
+background-image: url(../images/applique-cushion.jpg);
 }
 .img02 {
-  background-image: url(images/embroidery-flower.jpg);
+  background-image: url(../images/embroidery-flower.jpg);
 }
 .img03 {
-  background-image: url(images/moleyarn-knit.jpg);
+  background-image: url(../images/moleyarn-knit.jpg);
 }
 
 
@@ -355,7 +355,7 @@ section.bg-white {
 .section-ttl.heart-line::before,
 .section-ttl.heart-line::after {
   content: '';
-  background-image: url(images/favorite.svg);
+  background-image: url(../images/favorite.svg);
   background-repeat: space no-repeat;
   background-position-x: center;
   background-size: 1.5rem 1rem;
@@ -368,7 +368,7 @@ section.bg-white.scallop {
   margin-top: 30px;
   padding: 0 1rem 1rem;
   border-top: 20px solid;
-  border-image-source: url(images/scallop-frame.svg);
+  border-image-source: url(../images/scallop-frame.svg);
   border-image-slice: 35% fill;
   border-image-width: auto;
   border-image-outset: 10px 10px 0;
@@ -385,8 +385,8 @@ section.y2k-heart::after {
   content: '';
   z-index: -10;
   position: absolute;
-  mask: url(images/favorite.svg) no-repeat center / 120% auto;
-  -webkit-mask: url(images/favorite.svg) no-repeat center / 120% auto;
+  mask: url(../images/favorite.svg) no-repeat center / 120% auto;
+  -webkit-mask: url(../images/favorite.svg) no-repeat center / 120% auto;
 }
 
 /* 1vw = 8px のときをブレークポイントとする。(10vw = 800px) */
