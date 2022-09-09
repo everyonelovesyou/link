@@ -1,9 +1,6 @@
 @charset "utf-8";
 
 /* Fonts */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
-@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
-@import url(https://fonts.googleapis.com/css2?family=Alata&display=swap);
 @font-face {
   font-family: 'cheekFont';
   src: url('fonts/subsetcheekfont.eot');
@@ -11,23 +8,6 @@
     url('fonts/subsetcheekfont.woff') format('woff');  
   font-weight: normal;
   font-style: normal;
-}
-/*
-@font-face{
-  font-family: blogicon;
-  src: url(https://cdn.blog.st-hatena.com/fonts/public/blogicon/blogicon-regular.woff?version=4e8bca71263f6a47b5e60dda3d3dc5a49e70b775) format("woff"),
-    url(https://cdn.blog.st-hatena.com/fonts/public/blogicon/blogicon-regular.otf?version=3864ece6545b7228eb5270b4fa5b0536d59032d0) format("opentype");
-  font-weight: normal;
-  font-style: normal
-}
-*/
-
-
-/* fontawesome */
-@import url(https://weloveiconfonts.com/api/?family=fontawesome);
-
-[class*="fontawesome-"]:before {
-  font-family: 'Font Awesome 5 Free', sans-serif;
 }
 
 * {
@@ -189,19 +169,15 @@ background: #ededed;
 .social-menu li a[href*="twitter"]::before {
   content: "\f099";
 }
-
 .social-menu li a[href*="instagram"]::before {
   content: "\f16d";
 }
-
 .social-menu li a[href*="github"]::before {
   content: "\f09b";
 }
-
 .social-menu li a[href*="codepen"]::before {
   content: "\f1cb";
 }
-
 .social-menu li a[href*="hatena"]::before {
   content: '';
   display: inline-block;
@@ -396,18 +372,3 @@ section.y2k-heart::after { /* 8*110=880 */
   top: max(-15vw, -120px); /* (110-80vw)/2, (880-640)/2 */
   left: calc((100% - min(110vw, 880px))/2);
 }
-
-.card-body {
-  line-height: 1.2em;
-}
-
-.card-body .desc {
-  font-weight: 700;
-}
-.card-body .desc span.tag {
-  background-color: #fcf5ed;
-  border-radius: .25rem;
-  padding: .25em .5em;
-  margin-right: .25em;
-}
-
