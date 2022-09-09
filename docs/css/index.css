@@ -92,6 +92,7 @@ button.btn-gnav::before {
 button.btn-gnav {
   width: 3rem;
   height: 3rem;
+  border: none;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.5);
   position: fixed;
@@ -154,10 +155,10 @@ background: #ededed;
 }
 
 #gnav ul.menu li a {
-text-decoration: none;
-display: block;
-line-height: 3em;
-padding-left: calc(2em + 5px);
+  text-decoration: none;
+  display: block;
+  line-height: 3em;
+  padding-left: calc(2em + 5px);
 }
 #gnav ul.menu li a:hover {
 border-bottom: none;
@@ -179,7 +180,15 @@ border-bottom: none;
   z-index: 0;
 }
 
-.social-menu li a {
+ul.social-menu {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+ul.social-menu li a {
   text-decoration: none;
   font-size: 0;
 }
@@ -225,12 +234,18 @@ border-bottom: none;
 .site_ttl h1,
 .site_ttl p {
   font-family: 'cheekFont';
+  font-weight: bold;
   color: #c6232e;
-  z-index: 20;
+  text-align: center;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 0;
+  z-index: 20;
 }
 
 .slick_ctt {
+  position: relative;
   z-index: 30;
   width: 75vw;
   margin: 0 auto;
@@ -340,6 +355,7 @@ section {
   padding: 1rem 0;
 }
 section.bg-white {
+  background-color: #fff;
   margin: 0 calc(50% - 50vw);
   padding: 1rem calc(50vw - 50%);
 }
