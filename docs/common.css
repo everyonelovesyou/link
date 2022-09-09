@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /* Fonts */
 @font-face {
   font-family: 'cheekFont';
@@ -10,31 +9,57 @@
   font-style: normal;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+/*
+ * My Custom CSS Reset
+ * https://www.joshwcomeau.com/css/custom-css-reset/
+ */
+*, *::before, *::after {
   box-sizing: border-box;
 }
-
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+button {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  border-radius: 0;
+  text-transform: none;
+  -webkit-appearance: button;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+#root, #__next {
+  isolation: isolate;
+}
 ul {
   list-style: none;
+  padding: 0;
 }
 
 body {
+  font-family: 'Noto Sans JP', 'Noto Emoji', メイリオ, Meiryo, sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
   letter-spacing: 1px;
   color: #541018;
   background: #f9cdd4; /* ベージュ #fcf5ed */
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-.mb-10 {
-  margin-bottom: 5rem;
 }
 .c6232e {
   color: #c6232e;
@@ -46,10 +71,8 @@ img {
 .en {
   letter-spacing: 2px;
 }
-.border-red {
-  border-color: #c6232e;
-  border-width: 2px;
-}
+
+
 
 .btn-gnav::before {
   content: "\f0c9";
@@ -76,7 +99,6 @@ img {
   padding-top: 50px;
   background: rgba(255, 255, 255, 1);
   font-size: 16px;
-  box-sizing: border-box;
   z-index: 106;
 }
 
