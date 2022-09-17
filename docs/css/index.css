@@ -123,7 +123,7 @@ button.btn-gnav {
   right: 75vw;
 }
 
-.btn-gnav,
+button.btn-gnav,
 #gnav,
 #gnav::before {
   -webkit-transition: all 0.5s;
@@ -136,32 +136,31 @@ button.btn-gnav {
 .btn-gnav.open {
   background: rgba(255, 255, 255, 1);
 }
-
 .btn-gnav.open ~ #gnav::before {
   visibility: inherit;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-#gnav ul.menu li {
+#gnav ul.list-gnav li {
   display: block;
   padding: .25em;
   border-bottom: 1px solid #ededed;
 }
-#gnav ul.menu li:first-child {
-border-top: 1px solid #ededed;
+#gnav ul.list-gnav li:first-child {
+  border-top: 1px solid #ededed;
 }
-#gnav ul.menu li:hover {
-background: #ededed;
+#gnav ul.list-gnav li:hover {
+  background: #ededed;
 }
 
-#gnav ul.menu li a {
+#gnav ul.list-gnav li a {
   text-decoration: none;
   display: block;
   line-height: 3em;
   padding-left: calc(2em + 5px);
 }
-#gnav ul.menu li a:hover {
-border-bottom: none;
+#gnav ul.list-gnav li a:hover {
+  border-bottom: none;
 }
 
 
@@ -222,7 +221,8 @@ ul.social-menu li a {
   height: 28px;
 }
 
-.site_ttl {
+
+.site-ttl {
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -231,8 +231,8 @@ ul.social-menu li a {
   padding-top: 1.5rem;
 }
 
-.site_ttl h1,
-.site_ttl p {
+.site-ttl h1,
+.site-ttl p {
   font-family: 'cheekFont';
   font-weight: bold;
   color: #c6232e;
@@ -244,7 +244,7 @@ ul.social-menu li a {
   z-index: 20;
 }
 
-.slick_ctt {
+.slick-ctt {
   position: relative;
   z-index: 30;
   width: 75vw;
@@ -252,7 +252,7 @@ ul.social-menu li a {
   margin-right: auto;
 }
 
-.img_wrapper {
+.img-wrapper {
   width: 75vw;
   height: 75vw;
   margin: 0 calc(25vw /2);
@@ -291,18 +291,18 @@ ul.social-menu li a {
   content: '\f054';
 }
 
-.img_wrapper {
+.img-wrapper {
   background-size: cover;
   border: 2px solid #c6232e;
 }
 
-.img01 {
+.img-wrapper.img01 {
 background-image: url(../images/applique-cushion.jpg);
 }
-.img02 {
-  background-image: url(../images/embroidery-flower.jpg);
+.img-wrapper.img02 {
+  background-image: url(../images/patchwork-cut.jpg);
 }
-.img03 {
+.img-wrapper.img03 {
   background-image: url(../images/moleyarn-knit.jpg);
 }
 
@@ -325,11 +325,11 @@ background-image: url(../images/applique-cushion.jpg);
 }
 
 @media only screen and (min-width: 576px) {
-  .slick_ctt {
+  .slick-ctt {
     width: 40vw;
     margin: 0 0 0 10vw;
   }
-  .img_wrapper {
+  .img-wrapper {
     width: 40vw;
     height: 40vw;
     margin: 0 10vw 0 0;
@@ -338,6 +338,10 @@ background-image: url(../images/applique-cushion.jpg);
   .slick-list {
     margin: 0;
   }
+}
+
+section {
+  padding: 1rem 0;
 }
 
 section .section-ttl {
@@ -351,9 +355,6 @@ p.wrap-stc > span {
   display: inline-block;
 }
 
-section {
-  padding: 1rem 0;
-}
 section.bg-white {
   background-color: #fff;
   margin: 0 calc(50% - 50vw);
