@@ -86,6 +86,9 @@ header.row {
   margin-top: .5rem;
   margin-bottom: .5rem;
 }
+header.row > * {
+  margin-top: 0;
+}
 
 /* global-nav ------------------------------*/
 
@@ -217,31 +220,43 @@ ul.social-menu li a {
  * main-visual
  * (scallop-box, site-ttl, slick-ctt)
  */
+
+section.main-visual {
+  height: auto;
+  position: relative;
+  margin-bottom: 7.5rem;
+}
+
 /* scallop-box ------------------------------*/
 
 .scallop-box {
-  margin: 20px;
   background-color: #fff;
-  border: 10px solid;
+  width: 100%;
+  height: 100%;
+  /* --------------- */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-25%, 0);
+  z-index: 0;
+  /* --------------- */
+  margin: 20px;
+  border: .5px solid;
   border-image-source: url(../images/scallop-frame.svg);
   border-image-slice: 35% fill;
   border-image-width: auto;
   border-image-outset: 20px;
   border-image-repeat: round;
-  /*--------------*/
-  transform: translate(-25%, 0);
-  position: absolute;
-  z-index: 0;
 }
 
 /* site-ttl ------------------------------ */
+
 .site-ttl {
   display: flex;
   flex-direction: column;
+  gap: .5rem;
   width: fit-content;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  padding-top: 1.5rem;
+  margin: 1.75rem 0;
 }
 
 .site-ttl h1,
@@ -250,11 +265,16 @@ ul.social-menu li a {
   font-weight: bold;
   color: #c6232e;
   text-align: center;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
+  letter-spacing: normal;
   margin-bottom: 0;
   z-index: 20;
+}
+.site-ttl h1 {
+  font-size: 2rem;
+  line-height: 1;
+}
+.site-ttl p {
+  font-size: 1.25rem;
 }
 
 /* 
