@@ -74,6 +74,11 @@ body {
   letter-spacing: 2px;
 }
 
+/*
+ * header
+ * (global-nav, social-menu)
+ */
+
 header.row {
   display: flex;
   justify-content: space-between;
@@ -81,6 +86,8 @@ header.row {
   margin-top: .5rem;
   margin-bottom: .5rem;
 }
+
+/* global-nav ------------------------------*/
 
 button.btn-gnav::before {
   content: "\f0c9";
@@ -163,21 +170,7 @@ button.btn-gnav,
   border-bottom: none;
 }
 
-
-.scallop-box {
-  margin: 20px;
-  background-color: #fff;
-  border: 10px solid;
-  border-image-source: url(../images/scallop-frame.svg);
-  border-image-slice: 35% fill;
-  border-image-width: auto;
-  border-image-outset: 20px;
-  border-image-repeat: round;
-  /*--------------*/
-  transform: translate(-25%, 0);
-  position: absolute;
-  z-index: 0;
-}
+/* social-menu ------------------------------*/
 
 ul.social-menu {
   display: flex;
@@ -220,8 +213,28 @@ ul.social-menu li a {
   width: 28px;
   height: 28px;
 }
+/* 
+ * main-visual
+ * (scallop-box, site-ttl, slick-ctt)
+ */
+/* scallop-box ------------------------------*/
 
+.scallop-box {
+  margin: 20px;
+  background-color: #fff;
+  border: 10px solid;
+  border-image-source: url(../images/scallop-frame.svg);
+  border-image-slice: 35% fill;
+  border-image-width: auto;
+  border-image-outset: 20px;
+  border-image-repeat: round;
+  /*--------------*/
+  transform: translate(-25%, 0);
+  position: absolute;
+  z-index: 0;
+}
 
+/* site-ttl ------------------------------ */
 .site-ttl {
   display: flex;
   flex-direction: column;
@@ -243,6 +256,10 @@ ul.social-menu li a {
   margin-bottom: 0;
   z-index: 20;
 }
+
+/* 
+ * slick-slider
+ */
 
 .slick-ctt {
   position: relative;
@@ -340,6 +357,11 @@ background-image: url(../images/applique-cushion.jpg);
   }
 }
 
+/* 
+ * each sections
+ *
+ */
+
 section {
   padding: 1rem 0;
 }
@@ -392,9 +414,12 @@ section.bg-white.scallop {
   border-image-repeat: round;
 }
 
+/* y2k-heart ------------------------------ */
+
 section.y2k-heart {
   position: relative;
-  margin-top: min(15vw, 120px); /* (110-80vw)/2, (880-640)/2 */
+  margin-top: min(15vw, 120px);
+  /* (110-80vw)/2, (880-640)/2 */
 }
 
 section.y2k-heart::before,
@@ -405,19 +430,22 @@ section.y2k-heart::after {
   mask: url(../images/favorite.svg) no-repeat center / 120% auto;
   -webkit-mask: url(../images/favorite.svg) no-repeat center / 120% auto;
 }
-
-/* 1vw = 8px のときをブレークポイントとする。(10vw = 800px) */
-section.y2k-heart::before { /* 8*80=640  */
+/*
+ * 100vw = 800px のときをブレークポイントとする。
+ * ( 1vw = 8px )
+ */
+section.y2k-heart::before { /* 8*80=640px  */
   width: min(80vw, 640px);
   height: min(80vw, 640px);
-  background-color: #ffffffcc; /* 0.8 */
+  background-color: #ffffffcc; /* 80% */
   top: 0;
   left: calc((100% - min(80vw, 640px))/2);
 }
-section.y2k-heart::after { /* 8*110=880 */
+section.y2k-heart::after { /* 8*110=880px */
   width: min(110vw, 880px);
   height: min(110vw, 880px);
-  background-color: #ffffff66; /* 0.4 */
-  top: max(-15vw, -120px); /* (110-80vw)/2, (880-640)/2 */
+  background-color: #ffffff66; /* 40% */
+  top: max(-15vw, -120px); 
+  /* (110-80vw)/2, (880-640px)/2 */
   left: calc((100% - min(110vw, 880px))/2);
 }
